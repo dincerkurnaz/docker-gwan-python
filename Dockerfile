@@ -1,6 +1,5 @@
 FROM ubuntu:16.04
-RUN apt-get update && apt-get install pciutils build-essential wget python net-tools curl -y && rm -rf /var/lib/apt/lists/*
-#ADD . /opt
+RUN apt-get update && apt-get install pciutils build-essential wget python net-tools curl vim -y && rm -rf /var/lib/apt/lists/*
 WORKDIR /opt
 RUN  wget http://gwan.com/archives/gwan_linux64-bit.tar.bz2
 RUN  tar -xjf gwan_linux64-bit.tar.bz2; cd gwan_linux64-bit
